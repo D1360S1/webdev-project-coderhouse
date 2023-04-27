@@ -1,0 +1,240 @@
+/*-------------Fonts-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap'); /* font-family: 'Inconsolata', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap'); /* font-family: 'Kanit', sans-serif; */
+
+/*-------------Universal-------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #f5f5dc;
+}
+
+main {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #DE3F24;
+    margin-left: 15px;
+    font-family: 'Kanit', sans-serif;
+}
+
+section p {
+    margin: 10px;
+}
+
+ul {
+    margin-left: 30px;
+}
+
+/*-------------Header-------------*/
+.header-container {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: #585450;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.nav-index {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-index li {
+    list-style: none;
+    padding-right: 15px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.nav-index a {
+    color: #EBEBE4;
+}
+
+.nav-index a:hover {
+    color: #DE3F24;
+}
+
+/*-------------Main-------------*/
+.ruby-info {
+    height: auto;
+    width: 100%;
+    background-image: url("../images/banner-ruby.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #EBEBE4;
+}
+
+.versions table {
+    width: 60%;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.form {
+    margin-left: 20px;
+}
+
+.form .short-text {
+    width: 300px;
+}
+
+.form .text-box {
+    width: 500px;
+}
+
+/* Grid for enterprises */
+.ruby-enterprises h2 {
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #DE3F24;
+}
+
+.ruby-enterprises .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.ruby-enterprises .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+}
+
+.ruby-enterprises .grid-item img {
+    height: 150px;
+    margin-bottom: 0px;
+}
+
+.ruby-enterprises .grid-item p {
+    color: #DE3F24;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+._container h2 , .iframe-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    color: #DE3F24;
+    background-color: #e6e6b8;
+}
+
+._container h3 {
+    margin-top: 15px;
+    text-decoration: underline;
+    color: #FF715B;
+}
+
+.iframe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.iframe-item {
+    background-color: #f5f5dc;
+}
+
+._container p, h3 {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/*-------------Footer-------------*/
+footer {
+    bottom: 0;
+}
+
+.footer-container {
+    background-color: #EBEBE4;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Contact networks */
+
+.footer-contact-networks {
+    margin-left: 30px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.footer-contact-networks img {
+    height: 40px;
+}
+
+.contact-network {
+    padding-right: 30px;
+}
+
+/* Signature */
+.footer-sing-container {
+    right: 0;
+    display: flex;
+}
+
+.footer-sing-text {
+    padding: 10px;
+}
+
+.footer-sing-image img{
+    height: 40px;
+}
+
+/*-------------Responsive-------------*/
+@media screen and (max-width: 400px) {
+    main {
+        padding-top: 190px;
+    }
+    
+    header {
+        align-items: center;
+    }
+    
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ruby-info div {
+        width: 100%;
+    }
+
+    .form .short-text, .form .text-box {
+        width: 90%;
+    }
+    
+
+    .footer-sing-container {
+        display: none;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Documentación</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Documentación</h1>
+            <nav>
+                <ul class="nav-index">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="documentation.html">Documentación</a></li>
+                    <li><a href="gems.html">Librerías</a></li>
+                    <li><a href="rails.html">Ruby on Rails</a></li>
+                    <li><a href="contact.html">Contacto</a></li>            
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="iframe-container">
+                <h2 class="iframe-item">Mini tutorial de Ruby:</h2>
+                <iframe 
+                    width="560" height="315" src="https://www.youtube.com/embed/t_ispmWmdjY" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    
+        <section>           
+            <div class="_container">
+                <h2>Clases y objetos</h2>
+                <p>
+                    En Ruby todo es un objeto. Las clases son "plantillas" que se utilizan para crear objetos. Una clase define las propiedades y los comportamientos que comparten sus objetos (atributos y métodos respectivamente), Los objetos son instancias de una clase y tienen sus propios valores para las propiedades de la clase. En otras palabras, una clase es como un plano o diseño para un objeto y el objeto es la instancia real basada en ese plano. Ruby es un lenguaje de programación orientado a objetos, lo que significa que la creación y manipulación de objetos es fundamental en su estructura.
+                </p>
+    
+                <div>
+                    <h3>¿Qué es un objeto?</h3>
+                    <p>
+                        En Ruby, un objeto es una instancia de una clase que contiene datos y código que interactúan entre sí. Los objetos se utilizan para representar cosas del mundo real, como usuarios, productos, transacciones, etc. Cada objeto tiene sus propios datos y métodos que lo hacen único. Los datos son las propiedades de un objeto, y los métodos son las funciones o acciones que puede realizar el objeto. En Ruby, los objetos son muy flexibles y se pueden modificar en tiempo de ejecución, lo que permite una gran libertad de programación..
+                    </p>
+                </div>
+                
+                <div>
+                    <h3>Herencia y polimorfismo</h3>
+                    <p>
+                        En Ruby, la herencia permite que una clase herede propiedades y comportamientos de otra clase. La clase que se hereda se conoce como la superclase, mientras que la clase que hereda se conoce como la subclase. La subclase puede agregar o reemplazar propiedades y comportamientos de la superclase, y así crear objetos más especializados. El polimorfismo, por otro lado, es la capacidad de los objetos de diferentes clases para responder a un mismo método. Esto permite que diferentes objetos se comporten de la misma manera, lo que facilita la escritura de código modular y reutilizable.
+                    </p>
+                </div>
+            </div>
+
+            <div class="_container">
+                <h2>Clase File</h2>
+                <p>
+                    La clase File es una parte integral de la biblioteca estándar de Ruby y se utiliza para realizar operaciones en archivos. Permite la creación, lectura, escritura y eliminación de archivos, así como la navegación por el sistema de archivos. La clase File también proporciona una serie de métodos de clase para operaciones en archivos, como la comprobación de si un archivo existe o la obtención de información sobre el archivo, como su tamaño o fecha de creación. La clase File es muy versátil y se utiliza comúnmente en aplicaciones Ruby para la manipulación de archivos.
+                </p>
+            </div>
+        
+            <div class="_container">
+                <h2>Clase Dir</h2>
+                <p>
+                    La clase Dir, también conocida como Directory, es otra clase importante en la biblioteca estándar de Ruby. Se utiliza para la navegación y manipulación de directorios en el sistema de archivos. Permite la creación y eliminación de directorios, así como la enumeración de archivos y subdirectorios en un directorio determinado. La clase Dir también proporciona una serie de métodos de clase para operaciones en directorios, como la comprobación de si un directorio existe o la obtención de la lista de archivos en un directorio determinado. Al igual que la clase File, la clase Dir es muy útil en aplicaciones Ruby para la manipulación de archivos y directorios.
+                </p>
+            </div>
+        
+            <div class="_container">
+                <h2>Singleton</h2>
+                <p>
+                    El patrón Singleton se utiliza en programación orientada a objetos para garantizar que solo exista una instancia de una clase en un momento determinado. Esto puede ser útil en situaciones en las que solo se permite una instancia de una clase en todo el sistema, como cuando se trabaja con una base de datos o una conexión de red. La implementación del patrón Singleton en Ruby se realiza a través del uso de una clase Singleton, que es una subclase de la clase Object. La clase Singleton proporciona un método de clase llamado instance que se utiliza para obtener la única instancia de la clase.
+                </p>
+        
+                <h3>Método singleton</h3>
+                <p>
+                    Un método singleton, también conocido como método de instancia única, es un método que se define para una sola instancia de una clase. A diferencia de los métodos de instancia normales, que se definen para todas las instancias de una clase, un método singleton solo está disponible para una instancia específica de una clase. Los métodos singleton se definen utilizando la sintaxis class '<<' objeto seguida de la definición del método. En Ruby, los métodos singleton se utilizan a menudo para definir métodos de instancia para objetos individuales.
+                </p>
+                
+                <h3>Clase singleton</h3>
+                <p>
+                    La clase singleton es una clase especial en Ruby que se utiliza para definir métodos singleton. Cuando se define una clase singleton, se crea una instancia única de la clase que se utiliza para definir los métodos singleton. Los métodos definidos en una clase singleton solo están disponibles para la instancia única de la clase. La clase singleton se utiliza comúnmente en Ruby para definir métodos de instancia para objetos individuales, como se mencionó anteriormente.
+                </p>
+            </div>
+        
+            <div class="_container">
+                <h2>Lambdas</h2>
+                <p>
+                    Una lambda es una función anónima en Ruby que se puede asignar a una variable y pasar como argumento a un método. Las lambdas son similares a los bloques, pero a diferencia de los bloques, las lambdas se pueden almacenar en variables y pasar como argumentos. Las lambdas también tienen un comportamiento diferente a los bloques cuando se trata de argumentos de método y de retorno. En particular, las lambdas se comportan como métodos normales en cuanto a la comprobación de los argumentos y el retorno de valores. Las lambdas se utilizan comúnmente en Ruby para definir funciones simples y para pasar funciones como argumentos a otros métodos.
+                </p>
+            </div>
+
+            <div class="_container">
+                <h2>Eval</h2>
+                <p>
+                    Eval un método que se utiliza para ejecutar una cadena de texto como si fuera código Ruby. Esto significa que se puede escribir una cadena de texto que contenga cualquier código Ruby válido y eval lo ejecutará como si hubiera sido escrito directamente en el programa. Este método es muy útil cuando se desea ejecutar código dinámico o cuando se quiere tener la capacidad de definir y ejecutar código en tiempo de ejecución, esto es muy útila a la hora de realizar Metaprogramación.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact-container">
+                <ul class="footer-contact-networks">
+                    <li class="contact-network"><a href="https://www.linkedin.com/in/diego-solari-2380b2243" target="_blank"><img src="../images/linkedin-logo-1.png" alt="Mi Linkedin"></a></li>
+                    <li class="contact-network"><a href="https://github.com/DiegoSolari10" target="_blank"><img src="../images/github-logo-3.png" alt="Mi GitHub"></a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-sing-container">
+                <div class="footer-sing-text">
+                    <i>Mini tutorial de Ruby por Diego</i>
+                </div>
+                <div class="footer-sing-image">
+                    <img src="../images/logo-ruby.png" alt="Logo de ruby">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
